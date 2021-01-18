@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es-ing">
+<head>
+    
+	<title>Veterinaria</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/barra.css' %} ">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+	<meta name="width=device-width,user-scale,initial-scale=1.0,maximun-sacale=1.0,minum-scale=1.0"> 
+</head>
+<body style="background:#c4c4c4;">
+
+	{% include "admin/includes/navbar.html" %}
+	
+    <!--contenido-->
+	
+	<!--contenido-->
+
+
+	<div class="prueba">
+		<div class="shadow-lg p-3 mb-5 bg-white rounded">
+
+            <!--parte superior-->
+            <div  class="">
+                <button class="btn-close btn-close-whithe" type="button" style="float: right;" aria-label="close" ></button>
+                <h5 style="color:black;">Registro Cliente</h5>
+            </div>
+
+            <!--parte superior-->
+            <!--formulario crear-->
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="Apellidos" placeholder="Ingrese sus Apellidos">
+                </div>
+
+                <!--checkbox-->
+                <label for="Apellidos" class="form-label">Genero</label>
+                <div class="form-check form-inline">
+                    <input type="radio" name="inlineradio" class="form-check-input" id="inlineradio1" value="option1">
+                    <label for="inlineradio" class="form-check-label">Masculino</label>  
+                </div>
+                <div class="form-check form-inline" >
+                    <input type="radio" name="inlineradio" class="form-check-input" id="inlineradio2" value="option2">
+                    <label for="inlineradio" class="form-check-label">Femenino</label>  
+                </div>
+
+                <div class="mb-3">
+                    <label for="Apellidos" class="form-label">gmail</label>
+                    <input type="text" class="form-control" id="Apellidos" placeholder="Ingrese su Correo @">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="Apellidos" class="form-label">usuario</label>
+                    <input type="text" class="form-control" id="Apellidos" placeholder="Ingrese su usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="Apellidos" class="form-label">Contraseña</label>
+                    <input type="text" class="form-control" id="Apellidos" placeholder="Ingrese sus Contraseña">
+                </div>
+
+
+            <!--fin formulario admin-->
+		
+                <!--botones del formulario-->
+
+                <div class="d-grit gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Cancelar</button>
+                    <button class="btn btn-primary" type="button">Registrar</button>
+
+                </div>
+                <!--botones del formulario-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div>  
+<!--javascrip-->
+
+<script src=" {% static './js/jquery-3.5.1.min.js' %} "></script>
+<script src=" {% static './js/bootstrap.min.js' %} "></script>
+<script src="{% static './js/popper.min.js' %} "></script>
+</body>
+</html>

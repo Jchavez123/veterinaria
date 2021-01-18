@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-ing">
+<head>
+    
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/barra.css' %} ">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+	<meta name="width=device-width,user-scale,initial-scale=1.0,maximun-sacale=1.0,minum-scale=1.0"> 
+</head>
+
+<body style="background:#c4c4c4;">
+
+{% include "admin/includes/navbar.html" %}
+
+{% load static %}
+<!--contenido-->
+	<div class="prueba">
+		<div class="shadow-lg p-3 mb-5 bg-white rounded">
+
+			<!--card-->
+		<div class="tablero">
+			 <div class="card" style="width:15rem;margin-right: 20px;">
+				<img src="{% static './icons/cliente.svg'%}" alt="" class="card-img-top">
+					<div class="card body">
+						<p class="card-text"><a href="#">Lista Clientes</a></p>
+					</div>
+			 </div>
+
+			 <div class="card" style="width:15rem;margin-right: 20px;">
+				<img src="{% static './icons/huella.svg'%}" alt="" class="card-img-top">
+					<div class="card body">
+						<p class="card-text"><a href="#">Lista Mascotas</a></p>
+					</div>
+			 </div>
+			 <div class="card" style="width:15rem;margin-right: 20px;">
+				<img src="{% static './icons/vacuna.svg'%}" alt="" class="card-img-top">
+					<div class="card body">
+						<p class="card-text"><a href="#">lista Control Vacuna</a></p>
+					</div>
+
+				</div>
+				
+			 </div>
+			 <div class="tablero">
+			 <div class="card" style="width:15rem;margin-right: 20px;">
+				<img src="{% static './icons/cama-de-hospital.svg'%}" alt="" class="card-img-top">
+					<div class="card body">
+						<p class="card-text"><a href="#">Lista Internado	</a></p>
+					</div>
+			 </div>
+
+			 <div class="card" style="width:15rem;">
+				<img src="{% static './icons/admin-con-ruedas-dentadas.svg'%}" width="200px" height="200px" alt="" class="card-img-top">
+					<div class="card body">
+						<p class="card-text"><a href="#">Lista Admin</a></p>
+					</div>
+			 </div>
+			</div>
+			<!--finaliza las card-->
+
+
+
+
+
+
+
+
+
+
+
+<!--javascrip-->
+<script src=" {% static './js/jquery-3.5.1.min.js' %} "></script>
+<script src=" {% static './js/bootstrap.min.js' %} "></script>
+<script src="{% static './js/popper.min.js' %} "></script>
+</body>
+</html>

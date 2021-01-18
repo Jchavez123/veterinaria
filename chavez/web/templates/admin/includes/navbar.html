@@ -1,0 +1,68 @@
+{% load static %}
+
+<header style="background:#ffffff;height: 50px;">
+		<input type="checkbox" id="check">
+		<label for="check">
+			<i class="fast fast-bars" id="siderbar_btn"></i>
+		</label>
+	</header>
+    
+	<div>  
+		<div class="contenido">
+    <!--navbar-->
+
+
+		<nav class="side-bar" style="color: black;">
+			<div class="user-p" style="background-image: url({% static './img/fondo.jpg'%});">
+				<img src="{% static 'img/avatar.jpg'%}">
+				<h4>Pamela</h4>
+			</div>
+			<ul>
+				<li>
+					<a href="tablero">
+						<i class="fa fa-address-book" ></i>
+						<span>home</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="lista">
+						<i class="fa fa-address-book" ></i>
+						<span>Veterinario</span>
+					</a>
+				</li>
+				<li>
+					<a href="listacliente">
+						<i class="fa fa-user" ></i>
+						<span>Clientes</span>
+					</a>
+				</li>
+				<li>
+					<a href="listamnascota">
+						<i class="fa fa-paw" ></i>
+						<span>Mascota</span>
+					</a>
+				</li>
+				<li>
+					<a href="listavacuna">
+						<i class="fa fa-file-text" ></i>
+						<span>Control Vacuna</span>
+					</a>
+				</li>
+				<li>
+					<a href="listainternado">
+						<i class="fa fa-hospital-o" ></i>
+						<span>Internado</span>
+					</a>
+				</li>
+				<li>
+					<a href="/Home">
+						<i class="fa fa-power-off" ></i>
+						<span>Salir</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+
+ 

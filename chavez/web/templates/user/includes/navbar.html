@@ -1,0 +1,60 @@
+{% load static %}
+
+    <!--header-->
+	
+	<header style="background:#ffffff;height: 50px;">
+		<input type="checkbox" id="check">
+		<label for="check">
+			<i class="fast fast-bars" id="siderbar_btn"></i>
+		</label>
+	</header>
+	<div>  
+		<div class="contenido">
+    <!--navbar-->
+	<nav class="side-bar" style="color: black;background:#8F3CB1">
+			<div class="user-p" style="background-image: url({% static './img/fondo.jpg'%});">
+				<img src="{% static 'img/avatar.jpg'%}">
+				<h4>Chavez Santiago</h4>
+			</div>
+			<ul>
+				<li>
+					<a href="user">
+						<i class="fa fa-address-book" ></i>
+						<span>home</span>
+					</a>
+				</li>
+				<li>
+					<a href="usermascota">
+						<i class="fa fa-paw" ></i>
+						<span>Mascota</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="usertarjeta">
+						<i class="fa fa-user" ></i>
+						<span>tarjeta vacuna</span>
+					</a>
+				</li>
+					
+	
+				<li>
+					<a href="userinternado">
+						<i class="fa fa-hospital-o" ></i>
+						<span>Internado</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-power-off" ></i>
+						<span>Salir</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+	<!--contenido-->
+	<div class="prueba">
+		<div class="shadow-lg p-3 mb-5 bg-white rounded">
+
+    

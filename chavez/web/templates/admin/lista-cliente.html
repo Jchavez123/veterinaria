@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-ing">
+<head>
+    
+	<title>Veterinaria</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/barra.css' %} ">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+	<meta name="width=device-width,user-scale,initial-scale=1.0,maximun-sacale=1.0,minum-scale=1.0"> 
+</head>
+<body style="background:#c4c4c4;">
+	
+ {% include "admin/includes/navbar.html" %}
+
+	<!--contenido-->
+	<div class="prueba">
+		<div class="shadow-lg p-3 mb-5 bg-white rounded">
+
+            <!--parte superior-->
+            <div  class="">
+                <button class="btn-close btn-close-whithe" type="button" style="float: right;" aria-label="close" ></button>
+                <h5 style="color:black;">Lista <span></span> Clientes</h5>
+            </div>
+
+			<!--parte superior-->
+			<!--botones superior-->
+			<div class="d-grit gap-2 d-md-block">
+			<a class="btn btn-primary" href="registrocliente" role="button">Nuevo Cliente</a>
+			<a class="btn btn-primary" href="#" role="button">Lista Cliente</a>
+
+			</div>
+			<!--botones superior-->
+			<!--buscar-->
+			<div style="margin: 4%;">
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Ingrese datos para buscar" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Buscar</button>
+			  </form>
+			</div>
+			<!--lista-->
+			<table class="table" style=" margin-top: 50px;">
+				<thead class="table-dark">
+					<th class="col">#</th>
+					<th class="col">Nombre</th>
+					<th class="col">Apellido</th>
+					<th class="col">DNI</th>
+					<th class="col">direccion</th>
+					<th class="col">Actualizar</th>
+					<th class="col">Mascota</th>
+					<th class="col">Eliminar</th>
+				</thead>
+				<tbody>
+					<th scope="row">1</th>
+					<td>jorge</td>
+					<td>chavez</td>
+					<td>M</td>
+					<td>ahsddskah@gmail</td>
+					<td>
+						<div class="d-grit gap-2 d-md-block">
+							<button class="btn btn-primary" type="button">Actualizar</button>			
+						</div>
+					</td>
+						<td>
+						<div class="d-grit gap-2 d-md-block">
+							<button class="btn btn-primary" type="button">Agregar</button>			
+						</div>
+					</td>
+					<td>
+						<div class="d-grit gap-2 d-md-block">
+				<button class="btn btn-primary" type="button">Eliminar</button>
+
+					</div>
+					</td>
+				</tbody>
+			</table>
+              
+            <!--lista-->
+
+			<!--paginacion-->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+				  <li class="page-item disabled">
+					<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+				  </li>
+				  <li class="page-item"><a class="page-link" href="#">1</a></li>
+				  <li class="page-item"><a class="page-link" href="#">2</a></li>
+				  <li class="page-item"><a class="page-link" href="#">3</a></li>
+				  <li class="page-item">
+					<a class="page-link" href="#">Next</a>
+				  </li>
+				</ul>
+			  </nav>
+			<!--paginacion-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>  
+<!--javascrip-->
+<!--javascrip-->
+<script src=" {% static './js/jquery-3.5.1.min.js' %} "></script>
+<script src=" {% static './js/bootstrap.min.js' %} "></script>
+<script src="{% static './js/popper.min.js' %} "></script>
+</body>
+</html>

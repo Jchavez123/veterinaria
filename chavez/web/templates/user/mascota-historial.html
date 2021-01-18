@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es-ing">
+<head>
+    
+	<title>veterinaria</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/barra.css' %} ">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+	<meta name="width=device-width,user-scale,initial-scale=1.0,maximun-sacale=1.0,minum-scale=1.0"> 
+</head>
+<body style="background:#c4c4c4;">
+	
+
+            <!--parte superior-->
+          		{% include "user/includes/navbar.html" %}
+
+		
+					<!--parte superior-->
+					<div  class="">
+						<button class="btn-close btn-close-whithe" type="button" style="float: right;" aria-label="close" ></button>
+						<h5 style="color:black;"> <span></span> Mascota</h5>
+					</div>
+		
+					<!--parte superior-->
+					<!--mascota-->
+					<div class="card mb-3" style="max-width: 900px;">
+						<div class="row g-0">
+							<div class="col-md-4">
+                        <img src="{% static './img/images (2).jpg'%}" alt="">
+							</div>
+							<div class="col-md-8" >
+								<div class="card-body">
+									<h5 class="card-title">Boby</h5>
+									<p class="card-text">raza:pequines</p>
+								   <p class="card-text">genero :macho</p>
+								   
+								</div>
+							</div>
+						</div>
+					   </div>
+					<!--buscar-->
+					<div style="margin: 4%;">
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Ingrese datos para buscar" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					  </form>
+					</div>
+					<!--lista-->
+					<table class="table" style=" margin-top: 50px;">
+						<thead class="table-dark">
+							<th class="col">#</th>
+							<th class="col">Tipo servicio</th>
+							<th class="col">nombre servicio</th>
+							<th class="col">descrpcion</th>
+							<th class="col">fecha</th>
+							
+						</thead>
+						<tbody>
+							<th scope="row">1</th>
+							<td>edfgh</td>
+							<td>sdfghj</td>
+							<td>M</td>
+							<td>ahsddskah@gmail</td>
+							
+						</tbody>
+					</table>
+					  
+					<!--lista-->
+		
+					<!--paginacion-->
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center">
+						  <li class="page-item disabled">
+							<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+						  </li>
+						  <li class="page-item"><a class="page-link" href="#">1</a></li>
+						  <li class="page-item"><a class="page-link" href="#">2</a></li>
+						  <li class="page-item"><a class="page-link" href="#">3</a></li>
+						  <li class="page-item">
+							<a class="page-link" href="#">Next</a>
+						  </li>
+						</ul>
+					  </nav>
+
+					  <div class="d-grit gap-2 d-md-block">
+                   		 <a class="btn btn-primary" href="userhistoria" role="button">Ver espediente</a>
+                    		</div>
+					<!--paginacion-->
+		
+
+
+
+
+
+
+
+
+			
+		
+	</div>
+</div>
+</div>  
+ <!--javascrip-->
+<script src=" {% static './js/jquery-3.5.1.min.js' %} "></script>
+<script src=" {% static './js/bootstrap.min.js' %} "></script>
+<script src="{% static './js/popper.min.js' %} "></script>
+</body>
+</html>
